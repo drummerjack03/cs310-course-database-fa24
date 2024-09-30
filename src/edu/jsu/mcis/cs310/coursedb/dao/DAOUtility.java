@@ -3,9 +3,7 @@ package edu.jsu.mcis.cs310.coursedb.dao;
 import java.sql.*;
 import com.github.cliftonlabs.json_simple.*;
 import java.util.ArrayList;
-import org.json.simple.JsonArray;
-import org.json.simple.JsonObject;
-import org.json.simple.Jsoner;
+
 
 
 public class DAOUtility {
@@ -29,10 +27,10 @@ public class DAOUtility {
                 for (int i = 1; i <= columnCount; i++) {
                     String columnName = metaData.getColumnLabel(i); 
                     Object value = rs.getObject(i);
-                    record.put(columnName, value != null ? value : Jsoner.NULL);
+                    record.put(columnName, value != null ? value : null);
     }
     
-    records.add(record); // Add the JSON object to the JSON array
+    records.add(record);
 }
 
 
