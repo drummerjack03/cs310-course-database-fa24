@@ -3,6 +3,7 @@
         "src"
     ],
     "java.project.referencedLibraries": [
-        "json-simple-4.0.1 copy.jar"
+        "/Users/jackcrawford/mysql-connector-j-9.0.0/mysql-connector-j-9.0.0.jar",
+        "/Users/jackcrawford/Documents/Github2/cs310-course-database-fa24/json-simple-4.0.1 copy.jar"
     ]
 }

@@ -15,8 +15,8 @@ public final class DAOFactory {
     public DAOFactory(String prefix) {
 
         DAOProperties properties = new DAOProperties(prefix);
-
-        this.url = properties.getProperty(PROPERTY_URL);
+        
+        this.url = "jdbc:mysql://localhost:3306/jsu_fa24_v1";
         this.username = properties.getProperty(PROPERTY_USERNAME);
         this.password = properties.getProperty(PROPERTY_PASSWORD);
         
